@@ -1,7 +1,7 @@
 function customPromise(exc){  
      const rtvalue=   exc(resolve,reject)
 this.afterthen=(res,rej)=>{
-if(rtvalue!=''){
+if(rtvalue =='OK'){
     res(rtvalue)
 } else{
 rej(rtvalue)
